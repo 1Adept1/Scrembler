@@ -1,6 +1,9 @@
 print("ввод End завершит работку программы")
 while True:
-    s = ("End")
+    s = ("end")
+    if s == 'end':
+        break
+while True:
     try:         
             a1 = int(input("введите 1й операнд "))
             a2 = int(input("введите 2й операнд "))
@@ -41,9 +44,7 @@ while True:
             print("Скремблирование")
             print(b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12)
             print("дескремблирование")
-            print(c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12)
-            if s == 'End':
-                 break
+            print(c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12)      
     except ValueError:
        pass
 
